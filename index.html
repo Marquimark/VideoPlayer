@@ -10,16 +10,18 @@
 <body>
     <div class='wrapper'> 
         <div class='player'>
-            <video poster="./assets/images/poster.jpg" muted value='0' id='video' src='https://media.w3.org/2010/05/sintel/trailer.mp4' width='800'></video>
-            <h2 class='playerTitle'>Muscia para programar</h2>
-            <div class="playerActions">
-                <button class='bntControles' hidden id='backward10' title="Retrocede 10 Seg"></button> 
-                <button class='bntControles' id='play' title='Reproducir'></button> 
-                <button class='bntControles' id='pause' title='Pausar' hidden></button> 
-                <button class='bntControles' hidden id='forward10' title='Adelanta 10 Seg.'></button> 
-            </div>    
-            <div class="playerProgress">
-                <input type="range" min="0" value="0" step="1" id='progress'>    
+            <video poster="./assets/images/poster.jpg" value='0' id='video' src='https://media.w3.org/2010/05/sintel/trailer.mp4' width='800'></video>
+            <div class="playerOverlay">
+                <h2 class='playerTitle'>Muscia para programar</h2>
+                <div class="playerActions">
+                    <button class='bntControles' id='backward10' title="Retrocede 10 Seg"></button> 
+                    <button class='bntControles' id='play' title='Reproducir'></button> 
+                    <button class='bntControles' id='pause' title='Pausar' hidden></button> 
+                    <button class='bntControles' id='forward10' title='Adelanta 10 Seg.'></button> 
+                </div>    
+                <div class="playerProgress">
+                    <input type="range" min="0" value="0" step="1" id='progress'>    
+                </div>
             </div>
         </div>
     </div>
